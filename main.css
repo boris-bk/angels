@@ -72,7 +72,7 @@ header h1, footer h1{
 .log-reg {
   position: absolute;
   right: 100px;
-  top: 25px;
+  top: 30px;
 }
 a.header-log {
    font-family: Roboto;
@@ -154,9 +154,10 @@ header .user h3{
 .home-wel span {
   position: absolute;
   top: 50%;
-  left: 100px;
+  left: 0;
   transform: translateY(-50%);
-  width: 50%;
+  padding-right: 30%;
+  padding-left: 100px;
 }
 .home-wel span h1 {
   font-weight: 500;
@@ -232,6 +233,9 @@ a.enroll-course {
 }
 .moduls-begin, .moduls-author, .moduls-result, .moduls-media {
   display: inline-flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-between;
   margin: 0 100px 20px 100px;
 }
 .moduls-media {
@@ -243,31 +247,18 @@ a.enroll-course {
   display: block;
 }
 .modul-begin, .modul-result {
-  margin: 0 30px 60px 0;
-  width: 25%;
+  margin: 0 0 60px 0;
+  width: 20%;
   position: relative;
  }
-.modul-result {
-  margin: 0 60px 0 20px;
-}
 .modul-author {
-  margin: 0 60px 60px  0;
-  width: 50%;
+  margin: 0 0 60px 0;
+  width: 45%;
   position: relative;
 }
 .modul-media {
-  margin: 0 45px;
-  width: 50%;
+  width: 45%;
   position: relative;
-}
-.modul-begin:nth-child(4) {
-  margin-right: 0;
-}
-.modul-result:nth-child(4) {
-  margin-right: 20px;
-}
-.modul-author:nth-child(2) {
-  margin-right: 0;
 }
 .modul-begin h1, .modul-author h1 {
   font-weight: 500;
@@ -309,17 +300,21 @@ a.enroll-course {
   display: block;
 }
 .invitation-wrap {
-  background: rgb(51, 51, 51);
+  background: url("img/coding5.png") no-repeat;
+  background-size: cover;
   padding: 120px 100px 80px 100px;
   font-family: Roboto;
   font-style: normal;
 }
 .invitation {
   display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  margin: 0 0 60px 0;
 }
 .invitation-left {
-  width: 50%;
-  margin-right: 60px;
+  width: 47%;
 }
 .invitation-left h1 {
   font-family: Roboto;
@@ -340,7 +335,7 @@ a.enroll-course {
   color: #FFFFFF;
 }
 .invitation-right {
-  width: 50%;
+  width: 47%;
 }
 .invitation-right p {
   font-weight: normal;
@@ -409,28 +404,6 @@ a.enroll-course {
   color: #373737;
 }
 /*слайдер*/
-.way {
-  width: 100%;
-  height: 44px;
-  background: rgba(0, 0, 0, 0.04);
-}
-.way p {
-  position: absolute;
-  left: 100px;
-  top: 95px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: rgba(0, 0, 0, 0.9);
-}
-.way p a {
-  color: rgba(0, 0, 0, 0.9);
-}
-.way p span{
-  color: #F05030;
-}
 .content-slider {
   width: 100%;
   height: 100%;
@@ -675,7 +648,7 @@ hr {
   display: none;
 }
 
-/*модули*/
+/*путь*/
 .way {
    width: 100%;
    height: 44px;
@@ -698,6 +671,8 @@ hr {
 .way p span{
   color: #F05030;
 }
+
+/*модули*/
 .modul {
   width: 100%;
   height-min: 1800px;
@@ -794,120 +769,6 @@ hr {
   padding: 10px 10px;
 }
 
-/*регистрация*/
-.reg {
-   width: 100%;
-   height: 100%;
-   min-height: 900px;
-   position: absolute;
-   top: 0;
-   left: 0;
-   overflow: auto;
-   background: url(img/75286.png) no-repeat;
-   background-position-x: right;
- }
-.form {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width: 400px;
-  height: 600px;
-  background: #FFFFFF;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  text-align: center;
-}
-.form h1 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 33px;
-  color: #F05030;
-  margin-top: 30px;
-}
-.form p {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: rgba(0, 0, 0, 0.6);
-}
-.seti {
-  height: 50px;
-  margin-top: 20px;
-}
-.seti a {
-  border: 2px solid #F05030;
-  box-sizing: border-box;
-  border-radius: 38px;
-  background: #FFFFFF;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-  padding: 2px 60px;
-  margin: 5px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 33px;
-  color: #F05030;
-  text-decoration: none;
-  min-width: 150px;
-}
-.seti a:hover {
-  text-decoration: none;
-}
-.seti a:nth-child(2){
-  padding: 2px 67px;
-}
-.form h2 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: rgba(0, 0, 0, 0.6);
-  margin-top: 10px;
-}
-input {
-  width: 300px;
-  margin-bottom: 20px;
-  border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: rgba(0, 0, 0, 0.4);
-}
-input.submit {
-  border: none;
-  background: #F05030;
-  border-radius: 38px;
-  height: 40px;
-  width: 300px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.87);
-}
-p.log-in {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 17px;
-  color: rgba(0, 0, 0, 0.6);
-  margin-top: 0px;
-}
-p.log-in a {
-  color: #F05030;
-  text-decoration: none;
-}
-
 footer {
   width: 100%;
   height: 120px;
@@ -944,6 +805,8 @@ footer a {
   line-height: 21px;
   color: #F05030;
 }
+
+
 @media only screen and (max-width: 1300px) {
   .modul-nav {
     display: none;
@@ -961,8 +824,44 @@ footer a {
   .slide-page-wrap a.slide-next {
     right: -3%;
   }
+  .home-wel span {
+    padding-left: 50px;
+  }
+  .moduls-begin, .moduls-author, .moduls-result, .moduls-media {
+    margin: 0 50px 20px 50px;
+  }
+  .moduls-media {
+    margin-top: 70px;
+  }
+  .invitation-wrap {
+    padding: 120px 50px 80px 50px;
+  }
+
 }
 @media only screen and (max-width: 1200px) {
+  .home-wel span {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  a.enroll-course {
+    margin: 0 auto 0 auto;
+    display: block;
+  }
+  .home-moduls-begin, .home-moduls-author, .home-moduls-result, .home-media {
+    padding: 50px 0;
+  }
+  .moduls-begin, .moduls-author, .moduls-result, .moduls-media {
+    margin: 0 20px 20px 20px;
+  }
+  .moduls-media {
+    margin-top: 70px;
+  }
+  .invitation-wrap {
+    padding: 60px 20px 80px 20px;
+  }
+  .home-moduls-result h2 {
+    margin-bottom: 60px;
+  }
   footer {
     width: 100%;
     height: 150px;
@@ -1016,10 +915,28 @@ footer a {
   .modul-content a {
     margin-right: auto;
   }
+  .moduls-begin, .moduls-author, .moduls-result, .moduls-media {
+    margin: 0 100px 20px 100px;
+  }
+  .moduls-media {
+    margin-top: 70px;
+  }
+  .moduls-author {
+    margin: 0 0 20px 0;
+  }
+  .modul-begin, .modul-result {
+    width: 47%;
+  }
+  .invitation-wrap {
+    padding: 60px 20px 80px 20px;
+  }
 }
 @media only screen and (max-width: 980px) {
   header h1, footer h1{
-    left: 40px;
+     left: 40px;
+  }
+  .log-reg {
+    right: 40px;
   }
   header .user {
     right: 40px;
@@ -1044,13 +961,54 @@ footer a {
   .modul-content {
     margin: 80px 50px 150px 50px;
   }
+  .home-wel {
+    background-size: auto 100%;
+  }
+  .home-wel:first-child:before {
+    margin-top: 60%;
+  }
+  .home-moduls-begin h1, .home-moduls-author h1, .home-moduls-result h1, .home-media h1 {
+    width: 80%;
+  }
+  .home-moduls-begin p, .home-moduls-author p {
+    width: 90%;
+  }
+  .home-moduls-result h2 {
+    width: 80%;
+  }
+  .moduls-author-wrap {
+    width: 100%;
+  }
+  .moduls-author {
+    margin: 0 100px 20px 100px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  header h1, footer h1{
+    left: 15px;
+  }
+  .log-reg {
+    right: 15px;
+  }
+  .moduls-begin, .moduls-author, .moduls-result, .moduls-media {
+    margin: 0 50px 20px 50px;
+  }
+  .moduls-media {
+    margin-top: 70px;
+  }
 }
 @media only screen and (max-width: 740px) {
   .user {
     display: none !important;
   }
+  .log-reg {
+    display: none !important;
+    text-align: center;
+    left: 15px;
+  }
   .menu-icon-wrapper {
     display: flex !important;
+    right: 15px !important;
   }
   .slide-page-wrap a.slide-back {
     left: -7%;
@@ -1061,6 +1019,25 @@ footer a {
   .heading-content {
     width: 80%;
     margin-bottom: 20px;
+  }
+  .home-wel:first-child:before {
+    margin-top: 90%;
+  }
+  .modul-begin, .modul-result {
+    width: 100%;
+  }
+  .modul-author {
+    width: 100%;
+  }
+  .invitation-left {
+    width: 100%;
+  }
+  .invitation-right {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .modul-media {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 550px) {
@@ -1085,6 +1062,15 @@ footer a {
   }
   .slide-btns a svg {
     height: 15px;
+  }
+  .home-wel:first-child:before {
+    margin-top: 110%;
+  }
+  .home-wel span h1 {
+    font-size: 28px;
+  }
+  .home-wel span p {
+    font-size: 14px;
   }
   footer .logos img {
     max-width: 100px;
@@ -1123,27 +1109,54 @@ footer a {
   .menu-icon-wrapper {
     right: 10px !important;
   }
+  .home-wel:first-child:before {
+    margin-top: 150%;
+  }
+  .moduls-begin, .moduls-author, .moduls-result, .moduls-media {
+    margin: 0 20px 20px 20px;
+  }
+  .moduls-media {
+    margin-top: 70px;
+  }
 }
 @media only screen and (max-width: 375px) {
-  header {
+  .header-slider {
     background: #2D2D2D;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 30px 15px;
     height: 45px;
   }
-  header h1 {
+  header.header-home-page h1 {
     display: none;
   }
-  header h2 {
-    display: block;
+  header.header-slider h1 {
+    display: none;
   }
-  header .menu-icon-wrapper {
+  header.header-slider .menu-icon {
+    background-color: transparent;
+  }
+  header.header-slider .menu-icon::before {
+    background-color: #fff;
+    top: 0px;
+    transform: rotate(45deg);
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+  header.header-slider .menu-icon::after {
+    background-color: #fff;
+    top: 0px;
+    transform: rotate(-45deg);
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+  header.header-slider h2, .log-reg {
+    display: block !important;
+  }
+  header.header-home-page .menu-icon-wrapper {
     display: none !important;
   }
   .content-slider {
     background: rgba(0, 0, 0, 0.1);
   }
-  .way {
+  .way-slider {
     display: none;
   }
   .slide-page-wrap {
@@ -1179,7 +1192,22 @@ footer a {
   .modul-active-hidden {
     display: block !important;
   }
-  footer {
+  .home-wel span {
+    top: 40%;
+  }
+  .home-wel:first-child:before {
+    margin-top: 160%;
+  }
+  .home-moduls-begin h1, .home-moduls-author h1, .home-moduls-result h1, .home-media h1 {
+    width: 98%;
+  }
+  .home-moduls-begin p, .home-moduls-author p {
+    width: 98%;
+  }
+  .home-moduls-result h2 {
+    width: 98%;
+  }
+  footer.footer-slider {
     display: none;
   }
 
@@ -1310,5 +1338,5 @@ footer a {
   display: none !important;
 }
 .show {
-  display: block;
+  display: block !important;
 }

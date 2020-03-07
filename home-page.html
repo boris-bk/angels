@@ -14,12 +14,14 @@
 
 <body>
 
-<header>
-    <h1><span class="acad">Академия</span> Бизнес-Ангелов <span>Имагуру</span></h1>
-    <h2>Модуль 1.<br> Введение в ангельское инвестирование</h2>
+<header class="header-home-page">
+    <h1 class="home-acad"><span class="acad">Академия</span> Бизнес-Ангелов <span>Имагуру</span></h1>
     <div class="log-reg">
         <a href="#" class="header-log">Войти</a>
         <a href="#" class="header-reg">Регистрация</a>
+    </div>
+    <div class="menu-icon-wrapper">
+        <div class="menu-icon"></div>
     </div>
 </header>
 
@@ -138,7 +140,9 @@
             <h1>О нас в СМИ:</h1>
             <div class="moduls-media">
                 <div class="modul-media">
-                    <div class="media-heading-img"></div>
+                    <div class="media-heading-img">
+                        <img src="img/media1.png" alt="">
+                    </div>
                     <div class="media-heading">
                         <h2>«Это хобби и одна из лучших профессий»</h2>
                         <span>22 ИЮНЯ, 2017</span>
@@ -172,21 +176,10 @@
 <script>
     document.querySelector('.menu-icon-wrapper').onclick = function() {
         document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
+        document.querySelector('.log-reg').classList.toggle('show');
+        document.querySelector('.home-acad').classList.toggle('hidden');
     }
-    document.querySelector('.menu-icon-nav').onclick = function(){
-        document.querySelector('.menu-icon-nav-wrap').classList.toggle('menu-icon-active');
-        document.querySelector('.menu-icon-nav').classList.toggle('menu-icon-nav-l');
-        document.querySelector('.modul-nav').classList.toggle('nav-hiden');
-        document.querySelector('.slide-page-wrap').classList.toggle('slide-page-wrap-100');
-    }
-    document.querySelector('.max-size').onclick = function() {
-        document.querySelector('.slide-page').classList.toggle('slide-page-full-screen');
-        document.querySelector('.modal-fon-off').classList.toggle('modal-fon-on');
-        document.querySelector('.max-size-svg').classList.toggle('hidden');
-        document.querySelector('.min-size').classList.toggle('show');
-        document.querySelector('.slide-back').classList.toggle('hidden');
-        document.querySelector('.slide-next').classList.toggle('hidden');
-    }
+
 </script>
 </body>
 
